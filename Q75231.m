@@ -88,8 +88,8 @@ set(hAxes, 'YTick', [], 'YTickLabel', []);
 solverString = 'CVX';
 
 % cvx_solver('SDPT3'); %<! Default, Keep numRows low
-% cvx_solver('SeDuMi');
-cvx_solver('Mosek'); %<! Can handle numRows > 500, Very Good!
+cvx_solver('SeDuMi');
+% cvx_solver('Mosek'); %<! Can handle numRows > 500, Very Good!
 % cvx_solver('Gurobi');
 
 hRunTime = tic();
